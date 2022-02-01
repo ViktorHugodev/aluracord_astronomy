@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box, Button, Text, Image } from '@skynexui/components';
 import theme from '../../styles/theme.json';
 
-export function ButtonSendSticker(props) {
+export default function ButtonSendSticker(props) {
 	const [isOpen, setOpenState] = useState('');
 
 	return (

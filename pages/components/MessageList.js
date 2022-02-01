@@ -2,7 +2,7 @@ import theme from '../../styles/theme.json';
 import { Box, Text, Image, Icon } from '@skynexui/components';
 import { useProps } from '../hooks/useProps';
 
-export function MessageList() {
+export default function MessageList() {
 	const { listMessages, handleRemoveMessage } = useProps();
 
 	return (
