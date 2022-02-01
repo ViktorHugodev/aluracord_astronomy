@@ -1,8 +1,8 @@
-import theme from '../../styles/theme.json';
+import theme from '../styles/theme.json';
 import { Box, Button, Image } from '@skynexui/components';
 import { useProps } from '../hooks/useProps';
 
-export default function Header() {
+export function Header() {
 	const { user } = useProps();
 	return (
 		<Box

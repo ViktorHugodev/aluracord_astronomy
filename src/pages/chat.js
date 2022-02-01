@@ -1,9 +1,9 @@
 import { Box, Button, TextField } from '@skynexui/components';
 import theme from '../styles/theme.json';
-import { Header } from './components/Header';
-import { MessageList } from './components/MessageList';
-import { useProps } from './hooks/useProps';
-import { ButtonSendSticker } from './components/ButtonSticker';
+import { ButtonSendSticker } from '../components/ButtonSticker';
+import { Header } from '../components/Header';
+import { MessageList } from '../components/MessageList';
+import { useProps } from '../hooks/useProps';
 
 export default function ChatPage() {
 	const { message, handleMessage, setMessage } = useProps();

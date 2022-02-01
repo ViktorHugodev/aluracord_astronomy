@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import { createClient } from '@supabase/supabase-js';
+
 export const ChatContext = createContext({});
 const superbaseClient = createClient(
 	process.env.NEXT_PUBLIC_API_URL,

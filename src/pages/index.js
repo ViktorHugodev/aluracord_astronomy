@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Box, Button, Text, TextField, Image } from '@skynexui/components';
 import theme from '../styles/theme.json';
-import { useProps } from './hooks/useProps';
+import { useProps } from '../hooks/useProps';
 
 function Titulo(props) {
 	const Tag = props.tag || 'h1';
