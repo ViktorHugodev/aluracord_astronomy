@@ -10,7 +10,7 @@ export function MessageList() {
 			tag="ul"
 			styleSheet={{
 				overflowY: 'scroll',
-
+				webkitScrollbar: 'auto',
 				display: 'flex',
 				flexDirection: 'column-reverse',
 				flex: 1,

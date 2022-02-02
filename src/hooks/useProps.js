@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import { createClient } from '@supabase/supabase-js';
+import { api } from '../api/api';
 
 export const ChatContext = createContext({});
 const superbaseClient = createClient(
@@ -17,9 +18,27 @@ function realTimeMessages(addMessage) {
 }
 
 export function ChatProvider(props) {
-	const [user, setUser] = useState('viktorhugodev');
+	const [user, setUser] = useState('');
 	const [message, setMessage] = useState('');
 	const [listMessages, setListMessages] = useState([]);
+	const [info, setInfo] = useState([]);
+
+	const handleChange = async (user) => {
+		setUser(user);
+		try {
+			const response = await api.get(`/users/${user}`);
+			const { data } = response;
+			setInfo({
+				name: data.name,
+				username: data.login,
+				followers: data.followers,
+				following: data.following,
+			});
+			console.log(info);
+		} catch (error) {
+			// console.log(error);
+		}
+	};
 
 	useEffect(() => {
 		superbaseClient
@@ -69,6 +88,8 @@ export function ChatProvider(props) {
 	return (
 		<ChatContext.Provider
 			value={{
+				handleChange,
+				info,
 				user,
 				setUser,
 				message,
@@ -76,6 +97,7 @@ export function ChatProvider(props) {
 				handleMessage,
 				setMessage,
 				handleRemoveMessage,
+				info,
 			}}
 		>
 			{props.children}

@@ -20,7 +20,7 @@ function Titulo(props) {
 }
 
 export default function PaginaInicial() {
-	const { user, setUser } = useProps();
+	const { user, setUser, handleChange, info } = useProps();
 
 	return (
 		<>
@@ -90,7 +90,7 @@ export default function PaginaInicial() {
 						<TextField
 							fullWidth
 							value={user}
-							onChange={(e) => setUser(e.target.value)}
+							onChange={(e) => handleChange(e.target.value)}
 							textFieldColors={{
 								neutral: {
 									textColor: theme.theme.colors.neutrals[200],
@@ -136,7 +136,11 @@ export default function PaginaInicial() {
 								borderRadius: '50%',
 								marginBottom: '16px',
 							}}
-							src={`https://github.com/${user}.png`}
+							src={
+								info.name
+									? `https://github.com/${info.username}.png`
+									: 'images/user-default.png'
+							}
 							alt="Imagee"
 						/>
 						<Text
@@ -144,11 +148,28 @@ export default function PaginaInicial() {
 							styleSheet={{
 								color: theme.theme.colors.neutrals[200],
 								backgroundColor: theme.theme.colors.neutrals[900],
-								padding: '3px 10px',
+								padding: '4px 10px',
 								borderRadius: '1000px',
 							}}
 						>
-							{user}
+							{info && info.username}
+						</Text>
+						<Text
+							variant="body4"
+							styleSheet={{
+								color: theme.theme.colors.neutrals[200],
+								marginTop: '10px',
+								fontWeight: 'normal',
+								backgroundColor: theme.theme.colors.neutrals[900],
+								padding: '10px 15px',
+								fontSize: '14px',
+								borderRadius: '10px',
+								lineHeight: 1.2,
+							}}
+						>
+							{info.name
+								? `Seguidores: ${info.followers} Seguindo: ${info.following}`
+								: ''}
 						</Text>
 					</Box>
 					{/* Photo Area */}
