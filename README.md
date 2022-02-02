@@ -1,34 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">AluraCord - Astronomy 🚀<h1>
 
-## Getting Started
 
-First, run the development server:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/85125378/152149971-08b4f710-7c06-4abd-a390-6696514793e5.png"/>
 
-```bash
-npm run dev
-# or
-yarn dev
+![localhost_3000 (2) (1)](https://user-images.githubusercontent.com/85125378/152151168-2ebe5f35-9637-41fa-b765-b6c9a0b7ab8f.gif)
+
+
+
+
+## 📚 Informações sobre o projeto
+      
+
+* Esse projeto foi desenvolvido junto com a imersão React da alura, foram feitos desafios e funcionalidades diferentes das propostas.
+  
+  * Requisição na API do Github e informações extras do usuário na tela de seleção de usuário.
+
+  * Botão de enviar no chat, foto personalizada no chat, realtime do banco de dados Supabase.
+
+  * Variáveis ambiente no .env.local.
+  
+  * Projeto no ar: [Link](http://aluracord-astronomy-two.vercel.app/)
+  
+  * ContextAPI.
+  
+  # Conversão de todo o projeto para Typescript.... (em produção).
+      
+      
+      
+&nbsp;
+___
+&nbsp;
+
+
+## 🛠️ Tecnologias/Ferramentas ultilizadas
+
+* [React](https://pt-br.reactjs.org/E)
+* [Next.js](https://nextjs.org/)
+* [Skynex](https://skynexui.dev)
+* [Supabase](https://supabase.com/)
+* [Axios](https://skynexui.dev)
+
+&nbsp;
+___
+&nbsp;
+
+## ⚙️ Instalação
+```
+# Abra um terminal e copie este repositório com o comando
+$ git clone https://github.com/ViktorHugodev/aluracord_astronomy
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
+# Acesse a pasta da aplicação
+$ cd aluracord
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Instale as dependências
+$ yarn
+  
+# Crie um arquivo .env.local
+$ Defina as variáveis
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Inicie a aplicação
+$ yarn dev
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+```
 
-To learn more about Next.js, take a look at the following resources:
+&nbsp;
+___
+&nbsp;
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📝 Licença
+- Este projeto está licenciado sob a Licença MIT. Veja o arquivo de LICENÇA para detalhes.
+&nbsp;
+___
+&nbsp;
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="center">Feito por Victor Hugo<p>
