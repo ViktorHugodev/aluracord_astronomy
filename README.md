@@ -12,7 +12,7 @@
 ## 📚 Informações sobre o projeto
       
 
-* Esse projeto foi desenvolvido junto com a imersão React da alura, foram feitos desafios e funcionalidades diferentes das propostas.
+* Esse projeto foi desenvolvido junto com a imersão React da alura, foram feitos desafios e funcionalidades além das propostas.
   
   * Requisição na API do Github e informações extras do usuário na tela de seleção de usuário.
 
